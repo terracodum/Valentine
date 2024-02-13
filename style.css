@@ -1,0 +1,65 @@
+@import url(./font/font.css);
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Ceveat";
+}
+
+body {
+    background-image: url(./images/back.jpeg);
+    -webkit-backdrop-filter: blur();
+    backdrop-filter: blur(7px);
+    background-size: contain;
+    height: 100dvh;
+    width: 100dvw;
+}
+.noButton {
+    color:antiquewhite;
+    background-color: palevioletred;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-size: 40px;
+    border-radius: 10px;
+    border: solid 1px pink;
+    padding: 10px 15px;
+    transition: 500ms;
+}
+.pos0 {
+    top:75%;
+}
+.y {
+    left: 40%;
+}
+.n {
+    left: 60%;
+}
+
+.img_cont {   
+    flex-direction: column;
+    position: relative;
+    bottom: 15%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+}
+
+.img_cont img {
+    transform: translate(-50%,-50%);
+    transform: scale(1.5);
+}
+.will {
+    position:relative;
+    color: antiquewhite;
+    left: 3%;
+    font-size: 60px;
+    background-color: palevioletred;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: solid 1px pink;
+}
+.not {
+    display: none;
+}
