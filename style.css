@@ -12,6 +12,7 @@ body {
     background-size: contain;
     height: 100dvh;
     width: 100dvw;
+    overflow: hidden ;
 }
 .noButton {
     color:antiquewhite;
@@ -47,9 +48,14 @@ body {
 }
 
 .img_cont img {
+    max-height: 30%;
+    max-width: 50%;
+    position: relative;
+    right: 45px;
     transform: translate(-50%,-50%);
     transform: scale(1.5);
 }
+
 .will {
     position:relative;
     color: antiquewhite;
@@ -59,6 +65,37 @@ body {
     padding: 10px 20px;
     border-radius: 10px;
     border: solid 1px pink;
+}
+@media (max-width: 1280px) {
+    .will {
+        position: relative;
+        
+        font-size: 35px;
+    }
+    .img_cont img {
+        position: relative;
+        
+        transform: scale(1.5);
+    }
+    .pos0 {
+        top: 85%;
+    }
+}
+
+@media (orientation: portrait) {
+    .will {
+        top: 0%;
+        max-width: 70%;
+    }
+    .y {
+        left: 30%;
+    }
+    .n {
+        left: 70%;
+    }
+    .img_cont img {
+        transform: scale(1.4);
+    }
 }
 .not {
     display: none;
