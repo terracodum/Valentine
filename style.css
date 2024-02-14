@@ -7,7 +7,7 @@
 
 body {
     background-image: url(./images/back.jpeg);
-    -webkit-backdrop-filter: blur();
+    -webkit-backdrop-filter: blur(7px);
     backdrop-filter: blur(7px);
     background-size: contain;
     height: 100dvh;
