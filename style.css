@@ -83,6 +83,9 @@ body {
 }
 
 @media (orientation: portrait) {
+    .noButton {
+        transition: 250ms;
+    }
     .will {
         top: 0%;
         max-width: 70%;
